@@ -1,11 +1,18 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+@media screen (min-width: 320px) and (max-width: 568px) {
+	.introduction {
+		display: grid;
+		grid-template-columns: repeat (8, 1fr);
+		grid-template-rows: repeat (7, 1fr);
+		gap: 20px;
 	}
-}
 
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
+	.pic2 {
+		grid-row: 6/ span 2;
+	}
+
+	.h2 {
+		font-family: 'Bodoni Moda', sans-serif;
+		font-weight: 900;
+		font-size: 40px;
 	}
 }
