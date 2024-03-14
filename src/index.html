@@ -16,8 +16,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Kurale&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
-	
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,900;1,6..96,900&display=swap"
+		rel="stylesheet">
+
 	<!-- 
 		You can connect the CSS to the HTML here, 
 		inside the head tag. Here is an example:
@@ -52,23 +54,23 @@
 		</p>
 		<img class="pic2" src="images/beijing2.jpeg" alt="picture2">
 	</section>
-	<section class="links">
+	<nav class="links">
 		<ul>
-			<li> Top Attractions </li>
-			<li> Travel Tips </li>
-			<li> History </li>
+			<li><a href="#Attractions" class="link-button">Top Attractions</a></li>
+			<li><a href="#Tips" class="link-button">Travel Tips</a></li>
+			<li><a href="#History" class="link-button">History</a></li>
 		</ul>
 		<img class="pic3" src="images/beijng3.jpg" alt="picture3">
-	</section>
-	<section class="attractions">
+	</nav>
+	<section id="Attractions">
 		<h2 class="attractions-title">
 			Top Attractions
 		</h2>
-		<ol>
+		<ol class="attractions-main">
 			<li>
 				<article class="changcheng">
 					<h3 class="attraction-subtitle">
-						The Great Wall of China
+						1. The Great Wall of China
 					</h3>
 					<img class="attraction-img" src="images/greatwall.webp" alt="greatwall">
 					<p>
@@ -83,7 +85,7 @@
 			<li>
 				<article class="gugong">
 					<h3 class="attraction-subtitle">
-						The Forbidden City
+						2. The Forbidden City
 					</h3>
 					<img class="attraction-img" src="images/ForbiddenCity.jpeg" alt="ForbiddenCity">
 					<p>
@@ -98,9 +100,9 @@
 			<li>
 				<article class="tiantan">
 					<h3 class="attraction-subtitle">
-						Temple of Heaven
+						3. Temple of Heaven
 					</h3>
-					<img src="images/tiantan.jpg" alt="temple of heaven">
+					<img class="attraction-img" src="images/tiantan.jpg" alt="temple of heaven">
 					<p>
 						This ancient temple complex is renowned for its stunning architecture and beautiful gardens. It
 						was once used by emperors to pray for good harvests and is now a popular spot for both tourists
@@ -112,7 +114,7 @@
 			<li>
 				<article class="yiheyuan">
 					<h3 class="attraction-subtitle">
-						Summer Palace
+						4. Summer Palace
 					</h3>
 					<img class="attraction-img" src="images/summerpalace.jpeg" alt="summer palace">
 					<p>
@@ -126,7 +128,7 @@
 			<li>
 				<article class="beihai">
 					<h3 class="attraction-subtitle">
-						Beihai Park
+						5. Beihai Park
 					</h3>
 					<img class="attraction-img" src="images/Beihai.jpeg" alt="beihai park">
 					<p>
@@ -140,7 +142,7 @@
 			</li>
 		</ol>
 	</section>
-	<section class="tips">
+	<section id="Tips">
 		<img class="tips-back" src="images/tips.jpeg" alt="caption background">
 		<h2 class="tips-title">
 			Travel Tips
@@ -149,11 +151,11 @@
 			Traveling to Beijing can be an exhilarating experience, but it's always helpful to keep a few tips in mind
 			to ensure a smooth and enjoyable trip.
 		</p>
-		<ul>
+		<ul class="tips">
 			<li>
 				<article class="visa">
 					<h3 class="tips-subtitle">
-						Visa and Documentation
+						• Visa and Documentation
 					</h3>
 					<p>
 						Make sure to check the visa requirements well in advance and have all necessary documentation
@@ -165,7 +167,7 @@
 			<li>
 				<article class="tianqi">
 					<h3 class="tips-subtitle">
-						Weather Considerations
+						• Weather Considerations
 					</h3>
 					<p>
 						Beijing experiences distinct seasons, with hot summers and cold winters. Be prepared for the
@@ -177,7 +179,7 @@
 			<li>
 				<article class="yuyan">
 					<h3 class="tips-subtitle">
-						Language
+						• Language
 					</h3>
 					<p>
 						While Mandarin is the official language, English may not be widely spoken, especially outside
@@ -189,7 +191,7 @@
 			<li>
 				<article class="jiaotong">
 					<h3 class="tips-subtitle">
-						Transportation
+						• Transportation
 					</h3>
 					<p>
 						Beijing has an extensive public transportation system, including subways, buses, and taxis. The
@@ -201,7 +203,7 @@
 			<li>
 				<article class="qian">
 					<h3 class="tips-subtitle">
-						Currency and Payment
+						• Currency and Payment
 					</h3>
 					<p>
 						The official currency is the Chinese Yuan (CNY). While major credit cards are accepted at
@@ -213,7 +215,7 @@
 			<li>
 				<article class="meishi">
 					<h3 class="tips-subtitle">
-						Food and Water Safety
+						• Food and Water Safety
 					</h3>
 					<p>
 						Exercise caution when consuming street food and ensure that it is cooked thoroughly. Stick to
@@ -223,30 +225,27 @@
 			</li>
 		</ul>
 	</section>
-	<section class="history">
+	<section id="History">
 		<img class="picture4" src="images/history.jpeg" alt="picture4">
 		<h2 class="history-title">
 			History
 		</h2>
-		<p>
+		<p class="history-main">
 			Beijing's history is as rich and complex as China itself, spanning over three millennia. Originally known as
 			Ji, the area that encompasses modern-day Beijing has been inhabited since the prehistoric era. The city's
 			strategic location at the northern tip of the North China Plain made it a significant center for trade and
 			governance.
-		</p>
-		<p>
+			<br><br>
 			One of the most significant periods in Beijing's history came during the Ming Dynasty (1368-1644), when
 			Emperor Yongle established it as the capital of the empire and began construction of the Forbidden City, the
 			iconic imperial palace complex that remains a symbol of Chinese civilization today.
-		</p>
-		<p>
+			<br><br>
 			In the 20th century, Beijing played a central role in China's modern history. It was the birthplace of the
 			May Fourth Movement in 1919, a cultural and intellectual movement that advocated for modernization and
 			reform. Following the establishment of the People's Republic of China in 1949, Beijing became the political
 			and cultural center of the nation once again, with landmarks such as Tiananmen Square and the Great Hall of
 			the People symbolizing the new government's authority.
-		</p>
-		<p>
+			<br><br>
 			In recent decades, Beijing has experienced rapid economic growth and urbanization, transforming into a
 			bustling metropolis with modern infrastructure and a thriving economy. However, amidst the modern
 			skyscrapers and bustling streets, traces of Beijing's ancient history and cultural heritage continue to

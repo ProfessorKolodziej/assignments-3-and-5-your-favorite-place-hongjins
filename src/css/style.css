@@ -1,4 +1,11 @@
-@media screen (min-width: 320px) and (max-width: 568px) {
+	body {
+		max-width: 320px;
+	}
+
+	img {
+		width: 100%;
+	}
+
 	.introduction {
 		display: grid;
 		grid-template-columns: repeat (8, 1fr);
@@ -8,11 +15,164 @@
 
 	.pic2 {
 		grid-row: 6/ span 2;
+		height: 192px;
 	}
 
-	.h2 {
+	.links {
+		display: grid;
+		align-items: center;
+		height: 356px;
+	}
+
+	nav {
+		margin: 12px;
+	}
+
+	.link-button {
+		display: inline-block;
+		background-color: #FEC593;
+		color: #1E1E1E;
+		border-radius: 60px;
+		padding: 3px 10px;
+		text-decoration: none;
+		margin-bottom: 15px;
+	}
+
+	.attractions-main {
+		list-style-type: none;
+		padding-left: 0;
+		margin-top: 0;
+		background-color: #FFF6EE;
+		width: auto;
+		margin-left: 0px;
+		padding: 10px;
+		transform: transparent;
+	}
+
+	.attractions-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-top: 14px;
+		margin-bottom: 14px;
+	}
+
+	.attractions-title::after {
+		content: '';
+		position: absolute;
+		bottom: -0.2px;
+		height: 4px;
+		background: #FFF6EE;
+		width: 194px;
+	}
+
+	.attraction-subtitle {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.attraction-img {
+		width: 227px;
+	}
+
+	p {
+		margin: 15px;
+		width: 273px;
+	}
+
+	.button {
+		display: inline-block;
+		background-color: #99CCE8;
+		color: #1E1E1E;
+		font-size: 11.5px;
+		border-radius: 60px;
+		padding: 5px 5px;
+		text-decoration: none;
+		margin: 15px;
+	}
+
+	.tips {
+		list-style-type: none;
+		padding-left: 0;
+		margin-top: 0;
+	}
+
+	.tips-subtitle {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		margin-left: 15px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		position: relative;
+		display: inline-block;
+	}
+
+	.tips-subtitle::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -4px;
+		height: 4px;
+		background: #ECF5EC;
+		width: 100%;/
+	}
+
+	.history-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	.history-main {
+		background-color: #EEE3D4;
+		width: auto;
+		margin: 15px;
+		padding: 10px;
+		border-radius: 15px;
+	}
+
+	/* the following is font*/
+	h1 {
 		font-family: 'Bodoni Moda', sans-serif;
-		font-weight: 900;
 		font-size: 40px;
 	}
-}
+
+	h2 {
+		font-family: 'Bodoni Moda', sans-serif;
+		font-size: 25px;
+		position: relative;
+	}
+
+	.tips-subtitle {
+		font-size: 12px;
+	}
+
+	h3 {
+		font-family: 'Kurale', sans-serif;
+		font-size: 18px;
+		color: #1E1E1E;
+	}
+
+	p {
+		font-family: 'Jacques Francois', sans-serif;
+		font-size: 11.5px;
+	}
+
+	ul {
+		list-style-type: none;
+		font-family: 'Jacques Francois', sans-serif;
+		font-size: 15px;
+	}
+
+	ol {
+		font-family: 'Kurale', sans-serif;
+		font-size: 18px;
+	}
