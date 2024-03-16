@@ -1,3 +1,4 @@
+@media screen and (max-width: 320px) {
 	body {
 		max-width: 320px;
 	}
@@ -7,33 +8,31 @@
 	}
 
 	.introduction {
-		display: grid;
 		background-color: #FFEAEA;
 	}
 
 	.main-title {
-		background-image: url(../images/beijing1.jpeg);
+		background-image: url(../images/beijing1.jpg);
 		display: flex;
 		position: relative;
 		height: 157px;
 		background-size: cover;
 		justify-content: center;
 		align-items: center;
+		background-position: center;
+	}
 
+	p {
+		margin: 15px;
+		width: 268px;
+		margin-bottom: 10px;
 	}
 
 	.intro-main {
 		margin-top: 0%;
 		margin-bottom: 5px;
-		margin-left: 15px;
-		margin-right: 15px;
 		padding: 10px;
-	}
-
-	p {
-		margin: 15px;
-		width: 273px;
-		margin-bottom: 10px;
+		width: auto;
 	}
 
 	.links-main {
@@ -54,19 +53,21 @@
 		margin-bottom: 15px;
 	}
 
+	html {
+		scroll-behavior: smooth;
+	}
+
 	.pic3 {
 		margin-top: 0%;
 	}
 
 	.attractions-main {
 		list-style-type: none;
-		padding-left: 0;
 		margin-top: 0;
 		background-color: #FFF6EE;
 		width: auto;
 		margin-left: 0px;
 		padding: 10px;
-		transform: transparent;
 	}
 
 	.attractions-title {
@@ -116,11 +117,12 @@
 	}
 
 	.tips-title {
-		background-image: url(../images/tips.jpeg);
+		background-image: url(../images/tips.jpg);
 		display: flex;
 		position: relative;
 		height: 151px;
 		background-size: cover;
+		background-position: center;
 		justify-content: center;
 		align-items: center;
 
@@ -221,3 +223,4 @@
 		font-family: 'Kurale', sans-serif;
 		font-size: 18px;
 	}
+}
