@@ -8,7 +8,7 @@
 	}
 
 	.introduction {
-		background-color: #FFEAEA;
+		background-color: #FFF3F3;
 	}
 
 	.main-title {
@@ -36,7 +36,7 @@
 	}
 
 	.links-main {
-		margin-top: 40px;
+		margin-top: 20px;
 		margin-bottom: 20px;
 		display: grid;
 		justify-items: center;
