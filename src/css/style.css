@@ -24,7 +24,7 @@
 
 	p {
 		margin: 15px;
-		width: 268px;
+		width: auto;
 		margin-bottom: 10px;
 	}
 
@@ -116,6 +116,10 @@
 		margin-bottom: 0%;
 	}
 
+	.tips-img {
+		display: none;
+	}
+
 	.tips-title {
 		background-image: url(../images/tips.jpg);
 		display: flex;
@@ -125,12 +129,17 @@
 		background-position: center;
 		justify-content: center;
 		align-items: center;
+	}
 
+	.tips-intro {
+		margin: 25px;
+		margin-top: 20px;
+		margin-bottom: 0px;
 	}
 
 	.tips {
 		list-style-type: none;
-		padding-left: 0;
+		padding: 10px;
 		margin-top: 0;
 		gap: 10px;
 	}
@@ -196,6 +205,113 @@
 		font-size: 25px;
 		position: relative;
 		color: #FFFFFF;
+	}
+
+	.tips-subtitle {
+		font-size: 12px;
+	}
+
+	h3 {
+		font-family: 'Kurale', sans-serif;
+		font-size: 18px;
+		color: #1E1E1E;
+	}
+
+	p {
+		font-family: 'Jacques Francois', sans-serif;
+		font-size: 11.5px;
+	}
+
+	ul {
+		list-style-type: none;
+		font-family: 'Jacques Francois', sans-serif;
+		font-size: 15px;
+	}
+
+	ol {
+		font-family: 'Kurale', sans-serif;
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 321px) and (max-width: 834px) {
+	body {
+		max-width: 834px;
+	}
+
+	.attraction-img {
+		width: 321px;
+	}
+
+	.tips-introduction {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 20px;
+	}
+
+	.tips-img {
+		width: 469px;
+		height: auto;
+		flex: 1;
+	}
+
+	.tips-bgn {
+		flex: 1;
+		padding: 30px;
+	}
+
+	#History {
+		background-color: #FFEBE7;
+		gap: 23px;
+		padding-bottom: 15px;
+	}
+
+	.picture4 {
+		width: 588px;
+		height: 403px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.history-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+
+	.history-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: auto;
+		margin-left: 140px;
+		margin-right: 140px;
+		margin-bottom: 15px;
+	}
+
+	/* the following is font*/
+	h1 {
+		font-family: 'Bodoni Moda', sans-serif;
+		font-size: 40px;
+		color: #9C4A4D;
+	}
+
+	h2 {
+		font-family: 'Bodoni Moda', sans-serif;
+		font-size: 25px;
+		position: relative;
+	}
+
+	.tips-title {
+		font-family: 'Bodoni Moda', sans-serif;
+		font-size: 25px;
+		position: relative;
+		color: #1E1E1E;
 	}
 
 	.tips-subtitle {
