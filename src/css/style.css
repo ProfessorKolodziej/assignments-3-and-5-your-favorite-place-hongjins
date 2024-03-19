@@ -11,6 +11,10 @@
 		background-color: #FFF3F3;
 	}
 
+	.pic1 {
+		display: none;
+	}
+
 	.main-title {
 		background-image: url(../images/beijing1.jpg);
 		display: flex;
@@ -51,6 +55,7 @@
 		padding: 3px 10px;
 		text-decoration: none;
 		margin-bottom: 15px;
+		cursor: pointer;
 	}
 
 	html {
@@ -114,6 +119,7 @@
 		margin: 15px;
 		margin-top: 0%;
 		margin-bottom: 0%;
+		cursor: pointer;
 	}
 
 	.tips-img {
@@ -235,24 +241,113 @@
 }
 
 @media screen and (min-width: 321px) and (max-width: 834px) {
-	body {
-		max-width: 834px;
+	img {
+		width: 100%;
+	}
+
+	.introduction {
+		grid-template-columns: repeat (3, 1fr);
+	}
+
+	.pic2 {
+		width: 601px;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.links-main {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		justify-items: space-around;
+		gap: 140px;
+	}
+
+	.link-button {
+		display: inline-block;
+		background-color: #D4D4FC;
+		color: #1E1E1E;
+		border-radius: 60px;
+		padding: 3px 10px;
+		text-decoration: none;
+		margin-bottom: 0px;
+		cursor: pointer;
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+
+	html {
+		scroll-behavior: smooth;
+	}
+
+	.attractions-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		margin-top: 55px;
+		margin-bottom: 8px;
+	}
+
+	.attractions-title::after {
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		height: 6px;
+		background: #EDDECD;
+		border-radius: 4px;
+		width: 294px;
+		z-index: -1;
+	}
+
+	.attractions-main {
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 25px;
+		padding: 25px;
+		justify-content: center;
+	}
+
+	.attraction-article:nth-last-child(5) {
+		grid-column: 1 / -1;
 	}
 
 	.attraction-img {
 		width: 321px;
+		height: 201px;
+	}
+
+	.attraction-p {
+		margin-top: 21px;
+		margin-bottom: 21px;
+	}
+
+	.button {
+		display: inline-block;
+		background-color: #FADDBC;
+		color: #1E1E1E;
+		font-size: 20px;
+		border-radius: 60px;
+		padding: 5px 5px;
+		text-decoration: none;
+		margin: 0%;
+		cursor: pointer;
 	}
 
 	.tips-introduction {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		margin: 20px;
+		margin-top: 35px;
+		margin-bottom: 15px;
 	}
 
 	.tips-img {
 		width: 469px;
-		height: auto;
+		height: 344px;
 		flex: 1;
 	}
 
@@ -261,10 +356,60 @@
 		padding: 30px;
 	}
 
+	.travel-tips {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 5px;
+	}
+
+	.tips-intro {
+		background-color: #DDF3FF;
+		width: auto;
+		padding: 15px;
+		border-radius: 40px;
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.tips {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 25px;
+		column-gap: 25px;
+		padding-top: 0;
+		margin-top: 25px;
+		margin-bottom: 45px;
+	}
+
+	.tips-subtitle {
+		position: relative;
+		display: inline-block;
+		margin-bottom: 10px;
+		margin-top: 25px;
+	}
+
+	.tips-subtitle::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 4px;
+		height: 15px;
+		background: #ECF5EC;
+		width: 100%;
+		z-index: -1;
+	}
+
+	.tips-main {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
 	#History {
 		background-color: #FFEBE7;
 		gap: 23px;
 		padding-bottom: 15px;
+		padding-top: 15px;
 	}
 
 	.picture4 {
@@ -280,8 +425,8 @@
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-		margin-top: 12px;
-		margin-bottom: 12px;
+		margin-top: 23px;
+		margin-bottom: 23px;
 	}
 
 	.history-main {
@@ -297,13 +442,13 @@
 	/* the following is font*/
 	h1 {
 		font-family: 'Bodoni Moda', sans-serif;
-		font-size: 40px;
+		font-size: 60px;
 		color: #9C4A4D;
 	}
 
 	h2 {
 		font-family: 'Bodoni Moda', sans-serif;
-		font-size: 25px;
+		font-size: 35px;
 		position: relative;
 	}
 
@@ -315,18 +460,19 @@
 	}
 
 	.tips-subtitle {
-		font-size: 12px;
+		font-size: 25px;
 	}
 
 	h3 {
 		font-family: 'Kurale', sans-serif;
-		font-size: 18px;
+		font-size: 25px;
 		color: #1E1E1E;
 	}
 
 	p {
 		font-family: 'Jacques Francois', sans-serif;
-		font-size: 11.5px;
+		font-size: 20px;
+		line-height: 1.5;
 	}
 
 	ul {
@@ -338,5 +484,6 @@
 	ol {
 		font-family: 'Kurale', sans-serif;
 		font-size: 18px;
+		list-style-type: none;
 	}
 }
